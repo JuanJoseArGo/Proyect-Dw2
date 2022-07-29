@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo y Login</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>Registro</h2>
+
+    <div id="fotoperro"></div>
+    <div class="formulario1">
+    <form name=NuevoUsuario method="post" action="formulario.php">
+        Usuario: <br>
+        <input type="text" name="usuario" pattern="[a-zA-z0-9]+" placeholder="Ingrese su usuario" required><br>
+        Nombre: <br>
+        <input type="text" name="nombre" placeholder="Ingrese sus nombres" required><br>
+        Apellidos: <br>
+        <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" required><br>
+        Email: <br>
+        <input type="email" name="correo" placeholder="Ingrese su email" required><br>
+        Edad: <br>
+        <input type="number" name="edad" min="18" placeholder="Edad" required><br>
+        Contraseña: <br>
+        <input type="password" name="contraseña" maxlength="15" autocomplete="new-password" placeholder="Ingrese contraseña" required><br>
+        <input type="submit" name="enviar" class="button" value="Registrate">
+        <input type="reset" class="button" value="Borrar">
+        <hr>
+    </form>
+</div>
+
+    <h2>Iniciar sesion</h2>
+    <form name=iniciarsesion method="post" action="iniciarSesion.php">
+        Usuario: <br>
+        <input type="text" name="usuario" placeholder="Ingrese su usuario" required><br>
+        Contraseña: <br>
+        <input type="password" name="contraseña" autocomplete="off" placeholder="Ingrese contraseña" required><br>
+        <input type="submit" name="enviar" class="button" value="Iniciar sesion">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+/* AJUSTE DE CELULARES*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(124, 218, 36);
+}
+
+button:hover{
+    background-color: rgb(16, 122, 2);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: blue;
+}
+
+header{
+    background-color: rgba(245, 245, 245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blue;
+    font-size: 1.7em;
+}
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(0, 255, 136);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 2em;
+}
+
+#somos-rema .container{
+    text-align: center;
+    padding: 190px 15px;
+}
+
+#programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#programas .container{
+    padding: 40px 10px;
+}
+
+#programas h2{
+    margin-top: 0;
+    font-size: 3.2m;
+}
+#programas p{
+    display: none;
+}
+
+#programas .cart{
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 10px;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+.cart:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/huellita.jpg");
+}
+
+.cart:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/huesito.jpg");
+}
+
+#caract .container{
+    text-align: center;
+    padding: 250 px 12px;
+}
+#caract li{
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+
+#reya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 85vh;
+}
+#reya h2{
+    font-size: 9vw;
+}
+#reya button{
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 15px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* INICIAMOS AJUSTE DE PCRA MI PERRO*/
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+        #hero h1{
+            font-size: 5em;
+        }
+
+
+    #somos-rema .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos-rema .texto{
+        width: 50%;
+        max-width: 600 px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos-rema h2{
+        margin-top: 0px;
+    }
+    #somos-rema .img-container{
+        background-image: url("media/masco.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 600px;
+    }
+
+    #programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #programas p{
+        display: block;
+        margin-bottom: 30 px;
+    }
+
+    #programas h2{
+        font-size: 4em;
+    }
+    #programas h3{
+        margin-top: 0;
+    }
+
+    #programas .cart{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .cart:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/huellita.jpg");
+
+    }
+
+    .cart:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/huesito.jpg");
+    }
+
+    #caract{
+        background-image: url("media/pap.png");
+        background-repeat: no-repeat;
+        background-size: 300px 200px;
+        background-position: calc(100vw - 500px) -10px;
+    }
+
+    #caract .container{
+        text-align: initial;
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #reya h2{
+        font-size: 4em;
+    }
+    #reya button{
+        font-size: 2em ;
+    }
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1500px) {
+    #caract{
+        background-position-x: calc(100vw - 800px);
+    }
+}

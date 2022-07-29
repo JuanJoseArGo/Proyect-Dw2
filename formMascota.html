@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mascotita.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Insertar mascota</h2>
+    <form name=insertarMascota method="post" action="agregarMascota.php">
+        Usuario: <br>
+        <input type="text" name="nombre" placeholder="Ingrese su usuario" required><br>
+        Nombre de la mascota: <br>
+        <input type="text" name="nombreDog" placeholder="Ingrese el nombre de la mascota" required><br>
+        Raza de la mascota: <br>
+        <input type="text" name="sexo" placeholder="Ingrese la raza de la mascota" required><br>
+        Edad de la mascota: <br>
+        <input type="number" name="edad" min="1" placeholder="Edad" required><br>
+        <input type="submit" name="enviar" class="button" value="Iniciar sesion">
+    </form>
+</body>
+</html>
